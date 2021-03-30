@@ -1,0 +1,51 @@
+/* Main information - resetting some defaults (yes that you can do on elements!)*/
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 24px;
+    margin-left: 5px;
+    background-color: #2F2FA2;
+    color:white;
+}
+
+*:focus {
+    outline-width: 0;
+}
+
+/* Setting up the light theme */
+.button_light {
+    background-color: #2F2FA2;
+    border-radius: 5px;
+    color: #cfc2c2;
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid white;
+}
+
+.button_light:hover {
+    background-color: #cfc2c2;
+    color: white;
+    border: 1px solid white;
+}
+
+/* Other theme solution */
+.the_body_dark {
+    background-color: white;
+    color: #2F2FA2;
+}
+
+.button_dark {
+    border: 1px solid #2F2FA2;
+    background-color: white;
+    border-radius: 5px;
+    color: #2F2FA2;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.button_dark:hover {
+    background-color: #cfc2c2;
+    color: #2F2FA2;
+    border: 1px solid #2F2FA2;
+}
