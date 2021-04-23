@@ -10,16 +10,27 @@ const page1Changer = document.querySelector(`.switch_page_1`);
 
 const page2Changer = document.querySelector(`.switch_page_2`);
 
-const ulrPage1 = `index.html`;
+const page3Changer = document.querySelector(`.switch_page_3`);
 
-const ulrPage2 = `page_2.html`;
+const page4Changer = document.querySelector(`.switch_page_4`);
 
-function ChangeToPageTwo() {
-  window.location = ulrPage2
-}
+const urlPage1 = `index.html`;
+
+const urlPage2 = `page_2.html`;
+
+const urlPage3 = `page_3.html`;
+
 
 function ChangeToPageOne() {
-  window.location = ulrPage1
+  window.location = urlPage1
+}
+
+function ChangeToPageTwo() {
+  window.location = urlPage2
+}
+
+function ChangeToPageThree() {
+  window.location = urlPage3
 }
 
 console.log(page1Changer);
@@ -28,8 +39,18 @@ if (page1Changer) { // Changing from page 1 to page 2 by using a function
 }
 
 console.log(page2Changer);
-if (page2Changer) { // Changing from page 1 to page 2 by using a function
+if (page2Changer) { // Changing from page 2 to page 1 by using a function
     page2Changer.addEventListener(`click`, ChangeToPageOne);
+}
+
+console.log(page3Changer);
+if (page3Changer) { // Changing from page 2 to page 3 by using a function
+    page3Changer.addEventListener(`click`, ChangeToPageThree);
+}
+
+console.log(page4Changer);
+if (page4Changer) { // Changing from page 3 to page 2 by using a function
+    page4Changer.addEventListener(`click`, ChangeToPageTwo);
 }
 
 console.log(button);
